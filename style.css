@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nanum Myeongjo', serif;
+    background: #2f2f2f;
+    background-image: url(/images/bg.gif.crdownload);
+    background-repeat: no-repeat;
+    background-size: 1920px 1020px
+}
+
+ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  #main_header {
+    position: relative;
+    width: 1920px;
+    height:200px;
+    text-align: center;
+  }
+  h1.logo_title {
+    padding-top: 10px;
+  }
+  h1.logo_title img {
+    width: 262px;
+    height: 191px;
+    position: absolute;
+    left: 20px;
+    margin-top: -5px;
+  }
+  #gnb {
+      list-style-type: none;
+  }
+  #gnb > ul > li > a {
+      color: #fff;
+      float: left;
+      margin: 80px;
+  }
+  #gnb > ul > li {
+      font-size: 40px;
+      margin-left: 900px;
+      margin-top: -20px;
+  }
+  .main {
+      position: relative;
+  }
+  .main > .port {
+      position: absolute;
+      margin-top: 540px;
+      margin-left: 141px;
+      font-size: 181px;
+      color: #fff;
+  }
+  .main > .port > span {
+      font-size: 91px;
+  }
+
+  @-webkit-keyframes typing {
+    from { width: 0 }
+    to { width:16.3em }
+}
+
+@-moz-keyframes typing {
+    from { width: 0 }
+    to { width:16.3em }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+
+h1 { 
+    white-space:nowrap;
+    overflow:hidden;
+    border-right: .1em solid black;
+    
+    -webkit-animation: typing 6s steps(30, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+    -moz-animation: typing 6s steps(30, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+}

@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: 'Nanum Myeongjo', serif;
+    background-image: url(/images/subbg.jpg);
+    
+}
+
+ul {
+    list-style-type: none;
+  }
+a {
+    text-decoration: none;
+  }
+  #main_header {
+    position: relative;
+    width: 1920px;
+    height:200px;
+    text-align: center;
+  }
+  h1.logo_title {
+    padding-top: 10px;
+  }
+  h1.logo_title img {
+    width: 262px;
+    height: 191px;
+    position: absolute;
+    left: 20px;
+    margin-top: -5px;
+  }
+  #gnb {
+      list-style-type: none;
+  }
+  #gnb > ul > li > a {
+      color: #fff;
+      float: left;
+      margin: 80px;
+  }
+  #gnb > ul > li {
+      font-size: 40px;
+      margin-left: 900px;
+      margin-top: -20px;
+  }
+  .Project {
+    position: relative;
+  }
+ .Project > h1 {
+      text-align: center;
+      color: #fff;
+      font-size: 40px;
+  }
+  .Project > h2 {
+      text-align: center;
+      color: #fff;
+      font-size: 40px;
+      margin-top: 80px;
+  }
+  .Project .homepage ul li {
+      list-style-type: none;
+      float: left;
+      color: #fff;
+      font-size: 40px;
+      margin-top: 51px;
+  }
+  .Project .homepage ul li span {
+    position: absolute;
+    font-size: 20px;
+    margin-top: 300px;
+    margin-left: -450px;
+    line-height: 2em;
+  }
+  .Project .homepage .mok4 {
+    margin-left: -350px;
+  }
+
+  
