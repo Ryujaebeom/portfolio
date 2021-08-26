@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nanum Myeongjo', serif;
+    background-image: url(/images/subbg.jpg);
+}
+
+ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  #main_header {
+    position: relative;
+    width: 1920px;
+    height:200px;
+    text-align: center;
+  }
+  h1.logo_title {
+    padding-top: 10px;
+  }
+  h1.logo_title img {
+    width: 262px;
+    height: 191px;
+    position: absolute;
+    left: 20px;
+    margin-top: -5px;
+  }
+  #gnb {
+      list-style-type: none;
+  }
+  #gnb > ul > li > a {
+      color: #fff;
+      float: left;
+      margin: 80px;
+  }
+  #gnb > ul > li {
+      font-size: 40px;
+      margin-left: 900px;
+      margin-top: -20px;
+  }
+  .sayhello {
+      color: white;
+      position: absolute;
+      margin-top: 300px;
+      font-size: 50px;
+      margin-left: 550px;
+  }
+  #divClock {
+      position: absolute;
+      color: white;
+      font-size: 70px;
+      top: 550px;
+      margin-left: 470px;
+  }
+
+  form {
+      color: white;
+      position: absolute;
+      margin-top:800px;
+      margin-left: 392px;
+        
+  }
+  form #user_id {
+      font-size: 40px;
+      margin-bottom: 50px;
+
+  }
+  form #pw {
+      font-size: 40px;
+  }
+  .text {
+      position: absolute;
+      margin-top: 300px;
+      margin-bottom: 50px;
+  }
+  .text #text{
+      font-size:20px;
+      height: 400px;
+  }
+  .text form {
+      margin-bottom: 40px;
+  }
+  .button {
+      margin-bottom: 50px;
+  }
+

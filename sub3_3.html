@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYU-portfolio</title>
+    <link rel="stylesheet" href="sub3_3.css">
+    <link rel="stylesheet" href="main.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    function showClock(){
+      var currentDate = new Date();
+      var divClock = document.getElementById('divClock');
+      var msg = "현재 시간 : ";
+      if(currentDate.getHours()>12){      //시간이 12보다 크다면 오후 아니면 오전
+        msg += "오후 ";
+        msg += currentDate.getHours()-12+"시 ";
+     }
+     else {
+       msg += "오전 ";
+       msg += currentDate.getHours()+"시 ";
+     }
+
+      msg += currentDate.getMinutes()+"분 ";
+      msg += currentDate.getSeconds()+"초";
+
+      divClock.innerText = msg;
+
+      if (currentDate.getMinutes()>58) {    //정각 1분전부터 빨강색으로 출력
+        divClock.style.color="red";
+      }
+      setTimeout(showClock,1000);  //1초마다 갱신
+    }
+  </script>
+</head>
+<body onload="showClock()">
+    <div class="container">
+        <header id="mainheader">
+            <h1 class="logo_title">
+                <a href="index.html">
+                    <img src="/images/RYU.png" alt="">
+                </a>
+            </h1>
+            <nav id="gnb">
+                <ul>
+                    <li><a href="sub1_1.html">Project</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Aboutme</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Sayhello</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="sayhello">
+            <h1>i'm in Seoul Korea</h1>
+        </div>
+        <div id="divClock" class="clock"></div>
+        <form>
+
+              <label>Name : <input  type="text" id="user_id" size="54"> <br> </label>
+              <label>E-mail : <input type="password" id="pw" size="54"></label>
+
+          </form>
+          <div class="text">
+            <form action=""><label>문의사항<input type="text" id="text" size="120"></label></form>
+          </div>
+<div class="button">
+    <form action='login_page.php'>
+        <input type='button' 
+               value='Send' 
+               onclick='alert("류재범님에게 전송하였습니다.")'
+               style="font-size: 50px;
+               position: absolute;
+               margin-top: 660px;
+               margin-left: 988px;">
+      </form>
+</div>
